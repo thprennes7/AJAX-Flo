@@ -1,0 +1,7 @@
+<div class="mail">
+<h1><%= mail.object %></h1>
+
+<p><%= mail.body %></p>
+
+<%= link_to "Supprimer le mail", mail_path(mail), method: :delete, class: "", remote: true, data: {confirm: 'Es-tu sûr(e) ?'} %>
+</div>

@@ -1,0 +1,3 @@
+<div class="shortmail mail<%= mail.id %> <% if mail.read == false %>unread <% end -%>">
+	<p style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"><%= link_to mail.object, mail_path(mail.id), class: "", remote: true %></p>
+</div>

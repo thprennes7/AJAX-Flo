@@ -1,0 +1,3 @@
+$('.mail<%= @selected_mail.id %>').removeClass('unread');
+$('.mail').remove();
+$('#col-right').prepend("<%= j render 'mailpage', mail: @selected_mail %>");

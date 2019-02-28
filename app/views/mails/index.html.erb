@@ -1,0 +1,12 @@
+<main class="row">
+	<div id="col-left" class="col-lg-4">
+		<% @all_mails.each do |mail| %>
+			<%= render "shortmail", locals = {mail: mail}%>
+		<% end -%>
+	</div>
+	<div id="col-right" class="col-lg-8">
+		<div>
+			
+		</div>
+	</div>
+</main>

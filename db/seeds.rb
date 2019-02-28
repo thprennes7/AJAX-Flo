@@ -17,3 +17,8 @@ require 'faker'
     my_task.save
   end
 end
+
+
+5.times do
+	email = Mail.create(object: Faker::Beer.name, body: Faker::Lorem.paragraph(2), read: false)
+end
